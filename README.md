@@ -12,3 +12,5 @@ A web application that uses machine learning to identify skin cancer using Flask
 
 **Purpose** <br>
 Using a machine learning model on a webapp cuts down on time required to diagnose a patient with skin cancer(in this case), and thus increasing the chances of their survival since early stage detection directly correlates to survival rate of the patient. This also allows people in remote areas to access the model and elderly people to get an opinion before heading out which can be cumbersome.
+
+> If everything works fine it should look something like this.
