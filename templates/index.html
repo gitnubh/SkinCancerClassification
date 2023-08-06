@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='styling/styles.css')}}">
+    <script defer type="text/javascript" src="{{url_for('static', filename='functionality/index.js')}}"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SKICC</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark sticky-md-top" data-bs-theme="dark" >
+        <div class="container-fluid">
+          <!-- Heading -->
+          <a class="navbar-brand" href="#">SKICC</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav d-flex text-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">What is Skin Cancer?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#causes">Causes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tryitout">Try it out</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About The Project</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <section>
+      <!-- What is skin cancer? -->
+      <h1 class="display-1"><span class="skicc-title">What is Skin Cancer?</span></h1>
+      <p class="lead">Typically, the body’s skin cells grow old or become damaged over time, and normal cells grow and divide to form new, healthy cells to take their place. Sometimes, however, something goes wrong during this process, and new cells might be created when the body doesn’t need them, or old cells may not die as they should. When there’s a buildup of extra cells – old or new – they can form a malignant growth, or skin cancer.The skin is the body’s largest organ. Skin has several layers, but the two main layers are the epidermis (upper or outer layer) and the dermis (lower or inner layer). Skin cancer begins in the epidermis, which is made up of three kinds of cells—
+        Basal and squamous cell carcinomas are the two most common types of skin cancer. They begin in the basal and squamous layers of the skin, respectively. Both can usually be cured, but they can be disfiguring and expensive to treat.
+        Melanoma, the third most common type of skin cancer, begins in the melanocytes. Of all types of skin cancer, melanoma causes the most deaths because of its tendency to spread to other parts of the body, including vital organs.
+      </p>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <!-- Accordion -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Basal Cell Carcinoma
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <strong>Basal-cell carcinoma (BCC), also known as basal-cell cancer, is the most common type of skin cancer.</strong> Basal cell carcinoma is a type of skin cancer that begins in the basal cells. Normal basal cells line the epidermis. They’re the skin cells that replace old cells with new ones. Cancer of the basal cells results in tumors that appear on the skin’s surface. These tumors often look like sores, growths, bumps, scars, or red patches.
+                  While BCC almost never spreads to other places in the body (metastasizes), it can still result in disfigurement. In rare cases, it can spread to other parts of the body. If it does, it can become life-threatening.<br><a class="accordion-link" target="_blank" href="https://en.wikipedia.org/wiki/Basal-cell_carcinoma">Read More about Basal Cell Carcinoma Here</a><br><img class="accordion-images" src="{{url_for('static', filename='images/basal-cell-carcinoma.png')}}" alt="Basal Cell Carcinoma">
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              Squamous Cell Carcinoma
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <strong> Squamous-cell carcinoma (SCC),</strong> is a type of cancer. It develops in squamous cells, which are the thin, flat cells that make up the outermost layer of your skin. Squamous cells are also found in other parts of your body such as your lungs, mucous membranes, digestive tract, and urinary tract.
+                      SCC that forms in your skin is known as cutaneous SCC (cSCC). cSCC develops due to changes in the DNA of squamous cells, which causes them to multiply uncontrollably. It often forms on parts of your skin frequently exposed to sunlight like your face, neck, or arms.<br><a class="accordion-link" target="_blank" href="https://en.wikipedia.org/wiki/Basal-cell_carcinoma">Read More about Squamous Cell Carcinoma Here</a><br><img class="accordion-images" src="{{url_for('static', filename='images/squamous-cell-carcinoma.jpg')}}" alt="Squamous Cell Carcinoma">
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              Malignant Melanoma
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <strong>Melanoma, also redundantly known as malignant melanoma,</strong> is a type of skin cancer that develops from the pigment-producing cells known as melanocytes. Melanomas typically occur in the skin, but may rarely occur in the mouth, intestines, or eye (uveal melanoma). In women, they most commonly occur on the legs, while in men, they most commonly occur on the back. About 25% of melanomas develop from moles. Changes in a mole that can indicate melanoma include an increase in size, irregular edges, change in color, itchiness, or skin breakdown. <br> <a class="accordion-link" target="_blank" href="https://en.wikipedia.org/wiki/Basal-cell_carcinoma">Read More about Melanoma Here</a><br><img class="accordion-images" src="{{url_for('static', filename='images/Melanoma.jpg')}}" alt="Melanoma">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Causes page -->
+    <section id="causes">
+    </section>
+    <section class="causes">
+      <!-- svg file background -->
+      <div class="wave">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <!-- Causes of Skin Cancer Carousel -->
+      <span class="causes-title">What Causes Skin Cancer?</span>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{{url_for('static', filename='images/uvsun.jpg')}}" class="d-block w-100" alt="UV Radiation from the Sun">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>UV from The Sun</h5>
+              <p>The sun is the most well-known source of UV radiation, but UV rays also come from tanning beds and other artificial sources.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{{url_for('static', filename='images/genetics.jpg')}}" class="d-block w-100" alt="Gene Sequence">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Genetics</h5>
+              <p>Some risk factors of skin cancer can be inherited through our DNA.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{{url_for('static', filename='images/immunosuppresants.jpg')}}" class="d-block w-100" alt="Immunosuppresant Pills">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Immunosuppression</h5>
+              <p>Some conditions, like HIV/AIDS, and certain medications, such as those provided after organ transplants, can suppress the body’s immune system and might contribute to the development of skin cancer.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- A bit of glitter here and there -->
+    <div class="spacer design1"></div>
+    <section class="tryitout" id="tryitout">
+      <!-- Try it out button -->
+      <div class="try-button">
+        <a href="/tryitout">Try It Out!</a>
+      </div>
+    </section>
+    <!-- svg for space -->
+    <div class="spacer design2"></div>
+    <section class="about" id="about">
+    </section>
+    <!-- Disclaimer section -->
+    <section class="disclaimer">
+      <h1 class="dis-heading">Disclaimer</h1>
+      <h6 class="message">
+        Message from the Developer
+      </h6>
+      <p class="lead"> The skin cancer classification model is designed to support healthcare professionals in their diagnostic decision-making process and to provide access to people who don't have healthcare access. It is not intended to replace medical advice or diagnosis provided by a qualified medical professional. The performance and accuracy of the model may vary based on several factors, including the quality of input data, imaging techniques, and other variables. Therefore, the predictions provided by the model should be considered in conjunction with medical expertise and not relied upon solely for diagnostic decisions. I recommend seeking medical advice and diagnosis from a qualified healthcare professional before making any treatment or medical decisions. I do not make any representations or warranties, express or implied, regarding the completeness, accuracy, reliability, suitability, or availability of the skin cancer classification model. Therefore, any reliance on the information provided by the model is entirely at the user's discretion and risk.</p>
+    </section>
+    <section class="dev">
+      <!-- About me -->
+      <div class="dev-btn">
+        <a href="https://linktr.ee/Jeevan_Lowrence" target="_blank" style="text-decoration: none; color: aliceblue; text-align: center;">About the Developer</a>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

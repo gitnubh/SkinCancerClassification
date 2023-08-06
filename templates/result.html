@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>SKICC - Result</title>
+  </head>
+  <body style="background-color: #A0AECD;">
+    <!-- Heading -->
+    <h1 style="display: flex; justify-content: center;">
+      <a href="http://127.0.0.1:5000/#" style="text-decoration: none; color: black; border: 5px solid black; margin-top: 40px; letter-spacing: 20px; border-radius: 10%;">SKICC - Result</a>
+      </h1>
+    <p>
+      <!-- Display result button -->
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="display:inline-flex; justify-content: center; background-color: black; margin: 5% 45%;">
+        Click Here for the Results!
+      </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body" style="text-align: center;">
+        The predicted class is: {{ prediction }}  <br>
+        Disclaimer: The machine learning model used to classify skin cancer is designed to assist healthcare professionals in the diagnosis and treatment of skin conditions. While the model has been trained on a large dataset of skin images, it is important to note that no model can predict with 100% accuracy.This model was trained on isic dataset which had limited data and is prone to errors. Therefore, it is recommended that the predictions made by the model be confirmed by a licensed dermatologist before making any decisions regarding treatment or diagnosis. Additionally, the model should not be used as a substitute for professional medical advice or diagnosis. Always consult with a healthcare professional if you have any concerns regarding your skin health.
+      </div>
+    </div>
+    <div>
+      <!-- Reupload Image button -->
+      <a href="/tryitout" style="text-decoration: none;">
+      <button class="btn btn-primary" type="submit" style="display:inline-flex; justify-content: center; background-color: black; margin: 5% 47%;">Reupload</button>
+      </a>  
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>

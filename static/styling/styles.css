@@ -1,0 +1,310 @@
+/* Fonts used */
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap');
+
+body{
+  background-color: #A0AECD;
+  scroll-behavior: smooth ;
+}
+
+/* Navbar begins here */
+.navbar{
+  position: sticky;
+  padding: 20px;
+}
+
+.nav-link{
+  font-size: 20px;
+  margin-left: 200px;
+}
+
+/* Navbar background image */
+.display-1{
+   background-image: url('../images/hand.png');
+   background-size: cover;
+   background-blend-mode:exclusion;
+   padding: 100px;
+   text-align: center;
+ }
+
+ /* Title on image */
+.skicc-title{
+  margin: 200px;
+  font-size: 200px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  position: relative;
+  animation: fadeIn 5s;
+ -webkit-animation: fadeIn 5s;
+ -moz-animation: fadeIn 5s;
+ -o-animation: fadeIn 5s;
+ -ms-animation: fadeIn 5s;
+}
+
+/* Animation on load */
+ @keyframes fadeIn {
+   0% { opacity: 0; }
+   100% { opacity: 1; }
+ }
+
+ @-moz-keyframes fadeIn {
+   0% { opacity: 0; }
+   100% { opacity: 1; }
+ }
+
+ @-webkit-keyframes fadeIn {
+   0% { opacity: 0; }
+   100% { opacity: 1; }
+ }
+
+ @-o-keyframes fadeIn {
+   0% { opacity: 0; }
+   100% { opacity: 1; }
+ }
+
+ @-ms-keyframes fadeIn {
+   0% { opacity: 0; }
+   100% { opacity: 1; }
+ }
+
+ /* what is skin cancer text */
+ .lead{
+   padding: 40px 30px;
+   font-weight: 400;
+   position: relative;
+   animation: slideIn 2s;
+  -webkit-animation: slideIn 2s;
+  -moz-animation: slideIn 2s;
+  -o-animation: slideIn 2s;
+  -ms-animation: slideIn 2s;
+ }
+
+ /* animation sliding in on text */
+ @keyframes slideIn {
+   0%{ right: 70%; }
+   100%{ right: 0%; }
+ }
+
+ @-moz-keyframes slideIn {
+   0%{ right: 70%; }
+   100%{ right: 0%; }
+ }
+
+ @-webkit-keyframes slideIn {
+   0%{ right: 70%; }
+   100%{ right: 0%; }
+ }
+
+ @-o-keyframes slideIn {
+   0%{ right: 70%; }
+   100%{ right: 0%; }
+ }
+
+ @-ms-keyframes slideIn {
+   0%{ right: 70%; }
+   100%{ right: 0%; }
+ }
+
+ /* Accordion alignment begins here */
+.accordion-item{
+  width: 80%;
+  position: relative;
+  left: 10%;
+  background-color: black;
+  color: white;
+}
+
+
+button.accordion-button.collapsed{
+  background-color: black;
+  color: white;
+}
+
+a.accordion-link{
+  text-decoration: none;
+  padding: 5px;
+}
+
+a.accordion-link:hover{
+  background-color: white;
+  color:black;
+}
+
+/* Images insde accordion */
+.accordion-images{
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  left: 40%;
+}
+
+.wave {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+/* background image alignment */
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 137px;
+    transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+    fill: #A0AECD;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .wave svg {
+        width: calc(100% + 1.3px);
+        height: 150px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .wave svg {
+        width: calc(100% + 1.3px);
+        height: 35px;
+    }
+}
+
+/* Causes of skin cancer page begins here */
+.causes{
+  background-color: black;
+  color: white;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Causes title */
+.causes-title{
+  font-size: 160px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  position: relative;
+  left: 8%;
+}
+
+/* carousel items */
+.carousel-item{
+  width: 60%;
+  height: 60%;
+  position: relative;
+  left: 20%;
+  padding: 150px;
+}
+
+/* svg for spacing */
+.spacer{
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.design1{
+  background-image: url(../images/design.svg);
+}
+
+/* tryitout button page */
+.tryitout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+/* tryitout button */
+.try-button{
+  padding: 20px 60px;
+  border-radius: 100px;
+  font-size: 80px;
+  font-weight: 300;
+  border: 3px solid black;
+  cursor: pointer;
+  background-image: url(../images/background.svg);
+  background-size: cover;
+}
+
+.try-button > a{
+  color: white;
+  text-decoration: none;
+}
+
+.try-button:hover{
+  background: black;
+  color: white;
+  box-shadow: 0 0 50px black, 0 0 21px black;
+}
+
+.design2{
+  background-image: url(../images/buttonbg.svg);
+}
+
+/* Disclaimer page */
+.disclaimer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  border: 0px;
+}
+
+/* disclaimer heading */
+.dis-heading{
+  font-weight: 700;
+  color: black;
+  padding: 40px;
+  background-color: red;
+  text-transform: uppercase;
+}
+
+.message{
+  background-color: white;
+  color: black;
+  font-size: 30px;
+  padding: 20px;
+}
+
+/* Background image for button */
+.dev{
+  background-image: url(../images/devbg.svg);
+  padding: 40px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* About the developer button */
+.dev-btn{
+  padding: 20px 60px;
+  border-radius: 100px;
+  font-size: 50px;
+  font-weight: 300;
+  position: relative;
+  left: 20%;
+  width: 60%;
+  border: 3px solid black;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: black;
+}
+
+/* Hover animation */
+.dev-btn:hover{
+  background: black;
+  color: white;
+  box-shadow: 0 0 50px black, 0 0 21px black;
+}
+
+/* #A0AECD and black */
